@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: linear-gradient(110.81deg, #2DF91B 0%, #3E5BF6 99.98%, rgba(11, 51, 247, 0.0764754) 99.99%, rgba(10, 45, 254, 0.046875) 100%, rgba(9, 33, 240, 0.00520833) 100.01%, #3E5BF7 100.02%);
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    max-height: 50px;
+    height: 100%;
+}
+
+.header-wrapper {
+    margin: 0 45px;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header-wrapper-left {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin: 0;
+    margin-right: 35px;
+}
+
+.header-logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.header-menu {
+    margin: 0;
+    max-width: 272px;
+    width: 100%;
+}
+
+.header-ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header-li {
+    margin-right: 20px;
+}
+
+.header-li a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 200ms ease-out;
+}
+
+.header-li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.header-li a.active {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.header-wrapper-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.icon-moon {
+    width: 30px;
+    height: 30px;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header-user-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.header-user-name {
+    color: #fff;
+    font-size: 20px;
+    line-height: 27px;
+    margin-right: 10px;
+}
+
+.icon-strela {
+    width: 15px;
+    height: 7px;
+}
+
+.section-venibot {
+    margin-top: 120px;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-venibot-title {
+    font-size: 96px;
+    line-height: 138px;
+    color: #fff;
+    margin: 0;
+}
+
+.underline-venibot {
+    margin-bottom: 16px;
+}
+
+.section-venibot-span {
+    font-family: Teko;
+    color: #fff;
+    font-size: 48px;
+    line-height: 65px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.venibot-buttons {
+    color: #fff;
+    font-size: 32px;
+    line-height: 44px;
+    border: 5px solid #fff;
+    padding: 18px 29px;
+    border-radius: 50px;
+}
+
+.display-none {
+    display: none;
+}
+
