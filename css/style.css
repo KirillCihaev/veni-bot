@@ -1,10 +1,24 @@
+@font-face {
+    font-family: HelveticaNeueCyr-Light;
+    src: local("HelveticaNeueCyr-Light"),
+        url("./../fonts/HelveticaNeueCyr-Light.woff") format("woff");
+    font-weight: normal;
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
     background: linear-gradient(110.81deg, #2DF91B 0%, #3E5BF6 99.98%, rgba(11, 51, 247, 0.0764754) 99.99%, rgba(10, 45, 254, 0.046875) 100%, rgba(9, 33, 240, 0.00520833) 100.01%, #3E5BF7 100.02%);
     background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
 a {
@@ -58,7 +72,7 @@ a {
 }
 
 .header-li {
-    font-family: Ubuntu;
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -91,7 +105,7 @@ a {
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .icon-moon {
@@ -114,7 +128,6 @@ a {
 }
 
 .header-user-name {
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -130,14 +143,15 @@ a {
 
 .section-venibot {
     margin-top: 120px;
-    height: 950px;
+    max-height: 950px;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .section-venibot-title {
-    font-family: Teko;
+    font-family: 'Teko', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
@@ -154,7 +168,6 @@ a {
 
 .section-venibot-span {
     color: #fff;
-    font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
     font-size: 48px;
@@ -164,7 +177,6 @@ a {
 }
 
 .venibot-buttons {
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -173,9 +185,107 @@ a {
     border: 5px solid #fff;
     padding: 18px 29px;
     border-radius: 50px;
+    margin-bottom: 120px;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 95px;
+    align-items: center;
+    text-align: center;
+}
+
+.section-opportunities-wrapper {
+    background: rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-opportunities-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.section-opportunities-card {
+    margin-left: 85px;
+    margin-right: 95px;
+    width: 35%;
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+.section-opportunities-card-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 421px;
+    color: #fff;
+}
+
+.section-opportunities-card-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 35px;
+}
+
+.section-opportunities-card-span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.section-statistics-wrapper {
+    display: flex;
+    margin-top: 98px;
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.section-statistics-img.one {
+    margin-bottom: 8.46px;
+}
+
+.section-statistics-img.two {
+    margin-bottom: 14.22px;
+}
+
+.section-statistics-img.three {
+    margin-bottom: 15.16px;
+}
+
+.section-statistics-img.thore {
+    margin-bottom: 15.16px;
+}
+
+.section-statistics-text {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+}
+
+.section-statistics-span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 54px;
 }
 
 .display-none {
     display: none;
 }
-
