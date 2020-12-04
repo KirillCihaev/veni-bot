@@ -58,6 +58,11 @@ a {
 }
 
 .header-li {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
     margin-right: 20px;
 }
 
@@ -109,9 +114,12 @@ a {
 }
 
 .header-user-name {
-    color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px;
     line-height: 27px;
+    color: #fff;
     margin-right: 10px;
 }
 
@@ -129,19 +137,26 @@ a {
 }
 
 .section-venibot-title {
+    font-family: Teko;
+    font-style: normal;
+    font-weight: normal;
     font-size: 96px;
-    line-height: 138px;
+    line-height: 137px;
+    text-align: center;
     color: #fff;
     margin: 0;
 }
 
 .underline-venibot {
+    margin: 0;
     margin-bottom: 16px;
 }
 
 .section-venibot-span {
-    font-family: Teko;
     color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
     font-size: 48px;
     line-height: 65px;
     margin: 0;
@@ -149,9 +164,12 @@ a {
 }
 
 .venibot-buttons {
-    color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
     font-size: 32px;
     line-height: 44px;
+    color: #fff;
     border: 5px solid #fff;
     padding: 18px 29px;
     border-radius: 50px;
