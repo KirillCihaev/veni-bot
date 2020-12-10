@@ -12,8 +12,7 @@
 }
 
 html, body {
-    background: linear-gradient(110.81deg, #2DF91B 0%, #3E5BF6 99.98%, rgba(11, 51, 247, 0.0764754) 99.99%, rgba(10, 45, 254, 0.046875) 100%, rgba(9, 33, 240, 0.00520833) 100.01%, #3E5BF7 100.02%);
-    background-repeat: no-repeat;
+    height: 100%;
 }
 
 body {
@@ -21,348 +20,156 @@ body {
     color: #fff;
 }
 
-a {
-    text-decoration: none;
+body.white {
+    background: linear-gradient(110.81deg, #2DF91B 0%, #3E5BF6 99.98%, rgba(11, 51, 247, 0.0764754) 99.99%, rgba(10, 45, 254, 0.046875) 100%, rgba(9, 33, 240, 0.00520833) 100.01%, #3E5BF7 100.02%) no-repeat;
+    background-size: cover;
+}
+
+body.white>.header {
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+body.black {
+    background: url('./../img/black.jpg');
+    background-size: cover;
+}
+
+body.black>.header {
+    height: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .header {
-    background-color: rgba(0, 0, 0, 0.3);
-    max-height: 50px;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .header-wrapper {
-    margin: 0 45px;
-    max-width: 1200px;
-    width: 90%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    max-width: 1300px;
+    width: 90%;
+    min-width: 1000px;
 }
 
 .header-wrapper-left {
-    max-width: 350px;
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header-logo {
-    margin: 0;
-    margin-right: 35px;
-}
-
-.header-logo img {
     width: 45px;
     height: 45px;
+    margin-right: 25px;
 }
 
-.header-menu {
-    margin: 0;
-    max-width: 272px;
-    width: 100%;
+.header-logo>a>img {
+    width: 45px;
+    height: 45px;
 }
 
 .header-ul {
     display: flex;
-    text-align: center;
-    justify-content: space-between;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-li {
-    font-family: "Ubuntu", sans-serif;
+    list-style: none;
+}
+
+.header-li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.header-li-a {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
-    margin-right: 20px;
+    transition: color 400ms ease-out;
 }
 
-.header-li a {
-    color: rgba(255, 255, 255, 0.7);
-    transition: color 200ms ease-out;
+.header-li-a:hover {
+    color: #fff;
 }
 
-.header-li a:hover {
-    color: rgb(255, 255, 255);
-}
-
-.header-li a.active {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+.header-li-a.active {
+    color: #fff;
 }
 
 .header-wrapper-right {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; 
 }
 
 .header-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    margin-right: 30px;
+    margin-right: 35px;
 }
 
-.icon-moon {
+.icon-moon, .icon-sun {
     width: 30px;
     height: 30px;
+    fill: #fff;
+}
+
+.icon-moon.not-visible, .icon-sun.not-visible {
+    display: none;
 }
 
 .header-user {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
 }
 
 .header-user-photo {
+    height: 100%;
+    max-height: 45px;
     width: 45px;
-    height: 45px;
-    border-radius: 20px;
+    border-radius: 100px;
     margin-right: 10px;
 }
 
 .header-user-name {
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 27px;
-    color: #fff;
     margin-right: 10px;
 }
 
 .icon-strela {
     width: 15px;
-    height: 7px;
+    height: 10px;
 }
 
-.section-venibot {
-    margin-top: 120px;
-    max-height: 950px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.section-venibot-title {
-    font-family: 'Teko', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 96px;
-    line-height: 137px;
-    text-align: center;
-    color: #fff;
-    margin: 0;
-}
-
-.underline-venibot {
-    margin: 0;
-    margin-bottom: 16px;
-}
-
-.section-venibot-span {
-    color: #fff;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    margin: 0;
-    margin-bottom: 50px;
-}
-
-.venibot-buttons {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-    border: 5px solid #fff;
-    padding: 18px 29px;
-    border-radius: 50px;
-    margin-bottom: 120px;
-}
-
-.section-title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 70px;
-    line-height: 95px;
-    align-items: center;
-    text-align: center;
-}
-
-.section-opportunities-wrapper {
-    background: rgba(0, 0, 0, 0.12);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-opportunities-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1200px;
+.underline-100.visible {
     width: 100%;
-    align-items: center;
-    margin-bottom: 57px;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    background-color: #fff;
 }
 
-.section-opportunities-card {
-    margin-left: 85px;
-    margin-right: 95px;
-    width: 35%;
-    margin-bottom: 35px;
-    margin-top: 25px;
-}
-
-.section-opportunities-card-a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 421px;
-    color: #fff;
-}
-
-.section-opportunities-card-title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 68px;
-    margin-bottom: 35px;
-}
-
-.section-opportunities-card-span {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 41px;
-}
-
-.section-statistics-wrapper {
-    display: flex;
-    margin-top: 98px;
-    margin-bottom: 80px;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-}
-
-.section-statistics-img.one {
-    margin-bottom: 8.46px;
-}
-
-.section-statistics-img.two {
-    margin-bottom: 14.22px;
-}
-
-.section-statistics-img.three {
-    margin-bottom: 15.16px;
-}
-
-.section-statistics-img.thore {
-    margin-bottom: 15.16px;
-}
-
-.section-statistics-text {
-    margin-bottom: 9px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 54px;
-}
-
-.section-statistics-span {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 54px;
-}
-
-.section-premium-div {
-    background-color: rgba(0, 0, 0, 0.12)
-}
-
-.section-premium-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-}
-
-.section-premium-card {
-    margin-left: 120px;
-    margin-right: 60px;
-    width: 35%;
-    margin-bottom: 40px;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 138px;
-}
-
-.section-premium-card-title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 68px;
-    margin-bottom: 40px;
-}
-
-.section-premium-card-text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 41px;
-}
-
-.footer {
-    background-color: rgba(0, 0, 0, 0.75);
-    align-items: center;
-    text-align: center;
-}
-
-.footer-wrapper {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 60px;
-    max-width: 1200px;
-    width: 90%;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.footer-title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 52px;
-    line-height: 71px;
-}
-
-.footer-li {
-    list-style: none;
-}
-
-.footer-li a{
-    color: #fff;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 38px;
-    margin-top: 20px;
+.dn {
+    display: none;
 }

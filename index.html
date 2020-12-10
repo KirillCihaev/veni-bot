@@ -22,7 +22,7 @@
 
     </head>
 
-    <body>
+    <body class="body black">
 
         <header class="header">
 
@@ -46,11 +46,11 @@
 
                             <ul class="header-ul">
 
-                                <li class="header-li"> <a href="#" class="header-li-a active"> Главная </a> </li>
+                                <li class="header-li"> <a href="#" class="header-li-a active"> Главная <span class="underline-100 visible"> </span> </a> </li>
 
-                                <li class="header-li"> <a href="#" class="header-li-a"> Статистика </a> </li>
+                                <li class="header-li"> <a href="#" class="header-li-a"> Статистика <span class="underline-100"> </span> </a> </li>
 
-                                <li class="header-li"> <a href="#" class="header-li-a"> Поддержка </a> </li>
+                                <li class="header-li"> <a href="#" class="header-li-a"> Поддержка <span class="underline-100"> </span> </a> </li>
 
                             </ul>
 
@@ -64,14 +64,10 @@
 
                     <div class="header-buttons">
 
-                        <svg class="icon-moon">
+                        <svg class="icon-moon not-visible">
                             <use xlink:href="./img/icons.svg#moon"></use>
                         </svg>
-                        <!-- <img src="https://via.placeholder.com/30x30.svg" alt="заглушка" class="header-buttons-img">
-                        <img src="https://via.placeholder.com/30x30.svg" alt="заглушка" class="header-buttons-img display-none">
-                        <img src="https://via.placeholder.com/30x30.svg" alt="заглушка" class="header-buttons-img display-none">
-                        <img src="https://via.placeholder.com/30x30.svg" alt="заглушка" class="header-buttons-img display-none"> -->
-
+                        <img src="./img/Sun.svg" alt="sun" class="icon-sun">
                     </div>
 
                     <div class="header-user">
@@ -92,12 +88,16 @@
 
         </header>
 
-        <main>
+        <main class="main dn">
             <content class="section-venibot">
 
-                <h2 class="section-venibot-title">VeniBot</h2>
+                <div class="venibot-title-div">
+                    
+                    <h2 class="section-venibot-title">VeniBot</h2>
 
-                <img src="./img/underline-venibot.svg" alt="андерлайн" class="underline-venibot">
+                    <span class="underline-100 visible"> </span>
+
+                </div>
 
                 <span class="section-venibot-span">Discord бот для вашего сервера</span>
 
@@ -278,7 +278,7 @@
 
         </main>
 
-        <footer class="footer">
+        <footer class="footer dn">
 
             <div class="footer-wrapper">
 
@@ -349,5 +349,7 @@
         </footer>
 
     </body>
+
+    <script src="./js/main.js"></script>
 
 </html>
