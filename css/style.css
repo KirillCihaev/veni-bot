@@ -54,7 +54,7 @@ body.black>.header {
 
 .header-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1300px;
     width: 90%;
