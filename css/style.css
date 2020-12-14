@@ -11,18 +11,29 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+    height: 100%;
 }
 
 body.white {
-    background: linear-gradient(110.81deg, #2DF91B 0%, #3E5BF6 99.98%, rgba(11, 51, 247, 0.0764754) 99.99%, rgba(10, 45, 254, 0.046875) 100%, rgba(9, 33, 240, 0.00520833) 100.01%, #3E5BF7 100.02%) no-repeat;
-    background-size: cover;
+	background: linear-gradient(106.19deg, #2DF91B 3.41%, #3E5BF6 50.49%, #E7F91B 98.56%) no-repeat;
+	background-size: 300%;
+
+	animation: Gradient 20s linear infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 30%
+	}
+	50% {
+		background-position: 90% 45%
+	}
+	100% {
+		background-position: 0% 30%
+	}
 }
 
 body.white>.header {
@@ -32,7 +43,7 @@ body.white>.header {
 }
 
 body.black {
-    background: url('./../img/black.jpg');
+    background: url('./../img/black.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -162,8 +173,94 @@ body.black>.header {
     height: 10px;
 }
 
+.section-venibot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-venibot-wrapper {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.venibot-title-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.section-venibot-title {
+    text-align: center;
+    font-family: Teko;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 138px;
+}
+
+.section-venibot-span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 50px;
+}
+
+.venibot-buttons {
+    width: 320px;
+    height: 80px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.section-opportunities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-opportunities.black {
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+.section-opportunities.white {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.section-opportunities-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
 .underline-100.visible {
     width: 100%;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.underline-70.visible {
+    width: 70%;
+    text-align: center;
     margin-top: 5px;
     border: 1px solid #fff;
     border-radius: 100px;
