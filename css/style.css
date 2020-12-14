@@ -18,7 +18,7 @@ body {
 }
 
 body.white {
-	background: linear-gradient(106.19deg, #2DF91B 3.41%, #3E5BF6 50.49%, #E7F91B 98.56%) no-repeat;
+	background: linear-gradient(106.19deg, #2DF91B 3.41%, #3E5BF6 50.49%, #2DF91B 98.56%) no-repeat;
 	background-size: 300%;
 
 	animation: Gradient 20s linear infinite;

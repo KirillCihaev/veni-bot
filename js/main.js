@@ -3,6 +3,8 @@ let sun = document.querySelector(".icon-sun");
 let moon = document.querySelector(".icon-moon");
 let whiteTheme = document.querySelector(".body");
 let blackTheme = document.querySelector(".body");
+let whiteThemeOpportunities = document.querySelector(".section-opportunities");
+let blackThemeOpportunities = document.querySelector(".section-opportunities");
 
 headerButtons.addEventListener('click', function (event) {
     event.preventDefault();
@@ -10,4 +12,6 @@ headerButtons.addEventListener('click', function (event) {
     moon.classList.toggle('not-visible');
     whiteTheme.classList.toggle('white');
     blackTheme.classList.toggle('black');
+    whiteThemeOpportunities.classList.toggle('white');
+    blackThemeOpportunities.classList.toggle('black');
 });
