@@ -250,6 +250,75 @@ body.black>.header {
     flex-direction: column;
 }
 
+.section-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 131px;
+    margin-bottom: 25px;
+}
+
+.section-opportunities-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 90%;
+    min-width: 600px;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.section-opportunities-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 35%;
+    padding: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 90px;
+    border-radius: 25px;
+    transition: border, padding, box-shadow, transform, 1s linear; 
+}
+
+.section-opportunities-card:hover {
+    transform: translate(-30px, -30px);
+    padding: 0;
+    padding-bottom: 7px;
+    border: 3px solid #FFFFFF;
+    box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+}
+
+.section-opportunities-card-a-title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-opportunities-card-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 35px;
+}
+
+.section-opportunities-card-span {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+}
+
 .underline-100.visible {
     width: 100%;
     margin-top: 5px;
@@ -258,9 +327,8 @@ body.black>.header {
     background-color: #fff;
 }
 
-.underline-70.visible {
-    width: 70%;
-    text-align: center;
+.underline-50.visible {
+    width: 50%;
     margin-top: 5px;
     border: 1px solid #fff;
     border-radius: 100px;
