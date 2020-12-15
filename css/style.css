@@ -354,14 +354,15 @@ body.black>.header {
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 25px;
-    transition: border, box-shadow, transform, 500ms linear;
+}
+/*    transition: border, box-shadow, transform, 500ms linear;
 }
 
 .section-statistics-card:hover {
     transform: translate(-30px, -30px);
     padding: 3px;
     box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.30);
-}
+}*/
 
 .section-statistics-text {
     font-style: normal;
@@ -429,8 +430,7 @@ body.black>.header {
     padding: 6px;
     margin-bottom: 90px;
     border-radius: 25px;
-}
-    /*transition: border, box-shadow, transform, 500ms linear; 
+    transition: border, box-shadow, transform, 500ms linear; 
 }
 
 .section-premium-card:hover {
@@ -438,7 +438,7 @@ body.black>.header {
     border: 3px solid #FFFFFF;
     padding: 3px;
     box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.30);
-}*/
+}
 
 .section-premium-card-a-title-div {
     display: flex;
