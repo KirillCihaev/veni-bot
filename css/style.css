@@ -234,6 +234,7 @@ body.black>.header {
 }
 
 .section-opportunities.black {
+    background-color:rgba(255, 255, 255, 0.05);
     border-bottom: 2px solid #fff;
     border-top: 2px solid #fff;
 }
@@ -290,8 +291,7 @@ body.black>.header {
     transform: translate(-30px, -30px);
     border: 3px solid #FFFFFF;
     padding: 3px;
-    box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.25);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+    box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.30);
 }
 
 .section-opportunities-card-a-title-div {
@@ -315,6 +315,50 @@ body.black>.header {
     font-weight: 300;
     font-size: 30px;
     line-height: 41px;
+}
+
+.section-statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-statistics-wrapper {
+    display: flex;
+    max-width: 1300px;
+    width: 90%;
+    min-width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-statistics-card {
+    max-width: 325px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-statistics-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.section-statistics-span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 54px;
 }
 
 .underline-100.visible {
