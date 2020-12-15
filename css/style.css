@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 body {
@@ -39,7 +40,10 @@ body.white {
 body.white>.header {
     height: 50px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(106.19deg, #2e8a4d 3.41%, #485ba8 50.49%, #23743e 98.56%) no-repeat;
+	background-size: 300%;
+
+	animation: Gradient 20s linear infinite;
 }
 
 body.black {
@@ -50,10 +54,15 @@ body.black {
 body.black>.header {
     height: 50px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.12);
+    background: #333333;
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +234,12 @@ body.black>.header {
     justify-content: center;
     text-align: center;
     align-items: center;
+    transition: background, border, 300ms linear;
+}
+
+.venibot-buttons:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+    border: 10px double #fff;
 }
 
 .section-opportunities {
@@ -251,22 +266,13 @@ body.black>.header {
     flex-direction: column;
 }
 
-.section-title {
-    text-align: center;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 70px;
-    line-height: 131px;
-    margin-bottom: 25px;
-}
-
 .section-opportunities-cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1000px;
     width: 90%;
-    min-width: 600px;
+    min-width: 500px;
     flex-wrap: wrap;
     margin-left: 60px;
     margin-right: 60px;
@@ -278,8 +284,8 @@ body.black>.header {
     align-items: center;
     text-align: center;
     max-width: 600px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
     width: 36%;
     padding: 6px;
     margin-bottom: 90px;
@@ -333,16 +339,28 @@ body.black>.header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .section-statistics-card {
     max-width: 325px;
-    width: 25%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 6px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    transition: border, box-shadow, transform, 500ms linear;
+}
+
+.section-statistics-card:hover {
+    transform: translate(-30px, -30px);
+    padding: 3px;
+    box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.30);
 }
 
 .section-statistics-text {
@@ -359,6 +377,90 @@ body.black>.header {
     font-weight: normal;
     font-size: 40px;
     line-height: 54px;
+    margin-bottom: 25px;
+}
+
+
+.section-premium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-premium.black {
+    background-color:rgba(255, 255, 255, 0.05);
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+.section-premium.white {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.section-premium-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-premium-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 90%;
+    min-width: 500px;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.section-premium-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 36%;
+    padding: 6px;
+    margin-bottom: 90px;
+    border-radius: 25px;
+}
+    /*transition: border, box-shadow, transform, 500ms linear; 
+}
+
+.section-premium-card:hover {
+    transform: translate(-30px, -30px);
+    border: 3px solid #FFFFFF;
+    padding: 3px;
+    box-shadow: 30px 30px 0px rgba(255, 255, 255, 0.30);
+}*/
+
+.section-premium-card-a-title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-premium-card-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 35px;
+}
+
+.section-premium-card-span {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
 }
 
 .underline-100.visible {
@@ -375,6 +477,15 @@ body.black>.header {
     border: 1px solid #fff;
     border-radius: 100px;
     background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 131px;
+    margin-bottom: 25px;
 }
 
 .dn {
