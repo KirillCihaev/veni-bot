@@ -48,7 +48,7 @@ body.white>.header {
 
 body.black {
     background: url('./../img/black.jpg') no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 body.black>.header {
@@ -492,7 +492,7 @@ body.black>.header {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     min-width: 200px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -502,7 +502,9 @@ body.black>.header {
 
 .footer-wrapper-card {
     width: 33%;
-    max-width: 300px;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer-title-div {
@@ -550,6 +552,62 @@ body.black>.header {
     border: 1px solid #fff;
     border-radius: 100px;
     background-color: #fff;
+}
+
+.section-ne-pashalka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-ne-pashalka-wrapper {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.ne-pashalka-title-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.section-ne-pashalka-title {
+    text-align: center;
+    font-family: Teko;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 130px;
+}
+
+.section-ne-pashalka-span {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+body.black>.header>.header-wrapper>.ne-ssilka {
+    color:rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #29292936;
+}
+
+body.white>.header>.header-wrapper>.ne-ssilka {
+    color:rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff05;
+}
+
+.id {
+    color: rgba(255, 255, 255, 0.089);
 }
 
 .underline-50.visible {
