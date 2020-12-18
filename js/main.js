@@ -27,9 +27,11 @@ headerButtons.addEventListener('click', function (event) {
 
 let pasOnePas = document.querySelector("#pas1pas");
 let pasOne =  document.querySelector("#pas1");
+let pasNizTxt = document.querySelector(".pashalka-niz-txt")
 
 pasOnePas.addEventListener('click', function (event) {
     event.preventDefault();
     pasOne.classList.toggle('dn');
     contentMainWrap.classList.toggle('dn');
+    pasNizTxt.classList.toggle('dn')
 });

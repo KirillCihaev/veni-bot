@@ -595,7 +595,7 @@ body.black>.header>.header-wrapper>.pashalka {
     border-radius: 10px;
     width: 50px;
     height: 50px;
-    background-color: #29292936;
+    background-color: #00000017;
 }
 
 body.white>.header>.header-wrapper>.pashalka {
@@ -603,11 +603,17 @@ body.white>.header>.header-wrapper>.pashalka {
     border-radius: 10px;
     width: 50px;
     height: 50px;
-    background-color: #ffffff05;
+    background-color: #ffffff0a;
 }
 
 .id {
     color: rgba(255, 255, 255, 0.089);
+}
+
+.pashalka-niz-txt {
+    text-align: center;
+    color: #ffffff8c;
+    transform: translateY(-100px);
 }
 
 .underline-50.visible {
