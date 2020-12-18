@@ -590,7 +590,7 @@ body.black>.header {
     line-height: 45px;
 }
 
-body.black>.header>.header-wrapper>.ne-ssilka {
+body.black>.header>.header-wrapper>.pashalka {
     color:rgba(0, 0, 0, 0);
     border-radius: 10px;
     width: 50px;
@@ -598,7 +598,7 @@ body.black>.header>.header-wrapper>.ne-ssilka {
     background-color: #29292936;
 }
 
-body.white>.header>.header-wrapper>.ne-ssilka {
+body.white>.header>.header-wrapper>.pashalka {
     color:rgba(0, 0, 0, 0);
     border-radius: 10px;
     width: 50px;
@@ -621,4 +621,8 @@ body.white>.header>.header-wrapper>.ne-ssilka {
 .footer-title-div>.underline-50.visible {
     border: 1px solid rgba(255, 255, 255, 0.8);
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dn {
+    display: none;
 }

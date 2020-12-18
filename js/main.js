@@ -9,6 +9,7 @@ let whiteThemePremium = document.querySelector(".section-premium");
 let blackThemePremium = document.querySelector(".section-premium");
 let whiteThemeFooter = document.querySelector(".footer");
 let blackThemeFooter = document.querySelector(".footer");
+let contentMainWrap = document.querySelector(".MAIN-WRAP");
 
 headerButtons.addEventListener('click', function (event) {
     event.preventDefault();
@@ -22,4 +23,13 @@ headerButtons.addEventListener('click', function (event) {
     blackThemePremium.classList.toggle('black');
     whiteThemeFooter.classList.toggle('white');
     blackThemeFooter.classList.toggle('black');
+});
+
+let pasOnePas = document.querySelector("#pas1pas");
+let pasOne =  document.querySelector("#pas1");
+
+pasOnePas.addEventListener('click', function (event) {
+    event.preventDefault();
+    pasOne.classList.toggle('dn');
+    contentMainWrap.classList.toggle('dn');
 });
